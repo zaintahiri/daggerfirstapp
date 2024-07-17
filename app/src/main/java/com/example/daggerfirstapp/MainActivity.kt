@@ -1,9 +1,10 @@
 package com.example.daggerfirstapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.daggerfirstapp.daggerfirstexample.Engine
-import com.example.daggerfirstapp.daggerfirstexample.MyApplication
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -17,5 +18,12 @@ class MainActivity : AppCompatActivity() {
 
         (application as MyApplication).appComponent.inject(this)
         println("Engine starts :"+engine.start())
+
+
+    }
+
+    fun  nextActivity(view: View){
+        val intent = Intent(this@MainActivity, SecondActivity::class.java)
+        startActivity(intent)
     }
 }
