@@ -1,4 +1,4 @@
-package com.example.daggerfirstapp
+package com.example.daggerfirstapp.daggerfirstexample
 
 import dagger.Module
 import dagger.Provides
@@ -8,7 +8,7 @@ import javax.inject.Singleton
 class AppModule {
     @Singleton
     @Provides
-    fun getEngine():Engine{
+    fun getEngine(): Engine {
       return Engine()
     }
 }

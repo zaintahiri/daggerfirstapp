@@ -2,6 +2,8 @@ package com.example.daggerfirstapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.daggerfirstapp.daggerfirstexample.Engine
+import com.example.daggerfirstapp.daggerfirstexample.MyApplication
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {

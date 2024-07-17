@@ -1,5 +1,6 @@
-package com.example.daggerfirstapp
+package com.example.daggerfirstapp.daggerfirstexample
 
+import com.example.daggerfirstapp.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 
