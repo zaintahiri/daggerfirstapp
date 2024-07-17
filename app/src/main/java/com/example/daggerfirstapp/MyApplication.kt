@@ -5,6 +5,7 @@ import com.example.daggerfirstapp.daggerfirstexample.AppComponent
 import com.example.daggerfirstapp.daggerfirstexample.AppModule
 import com.example.daggerfirstapp.daggerfirstexample.DaggerAppComponent
 import com.example.daggerfirstapp.networkcalldemowithmodule.DaggerNetworkComponent
+import com.example.daggerfirstapp.networkcalldemowithmodule.DataBaseModule
 //import com.example.daggerfirstapp.daggerfirstexample.DaggerAppComponent
 //import com.example.daggerfirstapp.networkcalldemowithmodule.Da
 import com.example.daggerfirstapp.networkcalldemowithmodule.NetworkComponent
@@ -19,6 +20,7 @@ class MyApplication: Application() {
         appComponent= DaggerAppComponent.builder()
             .appModule(AppModule()).build()
         networkComponent= DaggerNetworkComponent.builder()
-            .networkModule(NetworkModule()).build()
+            .networkModule(NetworkModule())
+            .dataBaseModule(DataBaseModule()).build()
     }
 }
